@@ -1,0 +1,194 @@
+[
+  {
+    "id": "1",
+    "type": "bio",
+    "text": "Navya is a software engineer.",
+    "tags": ["bio", "software engineer"]
+  },
+  {
+    "id": "2",
+    "type": "education",
+    "text": "Navya has a Bachelor of Science in Computer Science from the University of California, Riverside, graduating in June 2025.",
+    "tags": ["education", "Computer Science", "UCR"]
+  },
+  {
+    "id": "3",
+    "type": "education",
+    "text": "Navya was a Student Ambassador for Bourns' College of Engineering at UCR.",
+    "tags": ["education", "ambassador", "academic excellence"]
+  },
+  {
+    "id": "4",
+    "type": "experience",
+    "text": "Navya interned as a Software Engineering Intern at Kohl's Technology in Summer 2024.",
+    "tags": ["work", "internship", "Kohl's"]
+  },
+  {
+    "id": "5",
+    "type": "experience",
+    "text": "At Kohl's, she developed a data automation tool using Java Spring and TypeScript REST APIs to streamline purchase orders.",
+    "tags": ["work", "software engineering", "data automation", "REST APIs", "Spring Boot"]
+  },
+  {
+    "id": "6",
+    "type": "experience",
+    "text": "At Kohl's, Navya did user research to find pain points her customers were facing with the data automation tool.",
+    "tags": ["work", "frontend"]
+  },
+  {
+    "id": "6.5",
+    "type": "experience",
+    "text": "To respond to the painpoints, she used Apache Kafka and React to visualize data, log progress, and provide insights to users.",
+    "tags": ["work", "frontend", "React", "Apache Kafka"]
+  },
+  {
+    "id": "7",
+    "type": "experience",
+    "text": "Navya interned at The H.Wood Group in Summer 2023",
+    "tags": ["work", "internship"]
+  },
+  {
+    "id": "7.5",
+    "type": "experience",
+    "text": "She developed her networking skills by building a TCP/IP wireless routing systems for iPads and printers.",
+    "tags": ["work", "software engineering", "fullstack"]
+  },
+  {
+    "id": "8",
+    "type": "experience",
+    "text": "At the H.Wood group she created an event check-in tool using Twilio API for personalized QR codes and SMS notifications.",
+    "tags": ["work", "software engineering"]
+  },
+  {
+    "id": "9",
+    "type": "experience",
+    "text": "Navya built a job management portal using JavaScript and SQL to handle venue-specific task assignments.",
+    "tags": ["work", "software engineering"]
+  },
+  {
+    "id": "10",
+    "type": "experience",
+    "text": "Navya worked as a Software Engineering Research Associate at UCR's Electrical and Computer Engineering Department from March 2023 to June 2023.",
+    "tags": ["work", "research"]
+  },
+  {
+    "id": "11",
+    "type": "experience",
+    "text": "She automated the download of 30,000+ NASA satellite images daily using JavaScript, optimizing the process by 90%.",
+    "tags": ["work", "research", "APIs", "NASA API"]
+  },
+  {
+    "id": "12",
+    "type": "experience",
+    "text": "Navya built Python pipelines to migrate datasets into Google Cloud Platform storage for scalable analysis.",
+    "tags": ["work", "research", "Python", "Google Cloud Platform"]
+  },
+  {
+    "id": "13",
+    "type": "project",
+    "text": "EcoScan is a React/Next.js web app that identifies plant names and native status from uploaded images with GPS coordinates.",
+    "tags": ["project", "tech", "frontend", "React/Next.js", "EcoScan", "GPS identification"]
+  },
+  {
+    "id": "14",
+    "type": "project",
+    "text": "EcoScan leverages a Flask backend to handle image uploads and processing.",
+    "tags": ["project", "tech", "backend", "Flask", "EcoScan", "HTTPS Requests"]
+  },
+  {
+    "id": "15",
+    "type": "project",
+    "text": "Congressional Voting Records Analysis is a predictive analysis of US House votes using Python, with machine learning models achieving up to 98% accuracy.",
+    "tags": ["project", "data analysis", "machine learning"]
+  },
+  {
+    "id": "16",
+    "type": "project",
+    "text": "Hotplate Simulation is a multithreaded C++ heat diffusion simulator, paired with a Python heatmap generator for visualization.",
+    "tags": ["project", "simulation", "technical", "Hotplate Simulation", "C++", "Python", "Visualization"]
+  },
+  {
+    "id": "17",
+    "type": "personal_project",
+    "text": "Guffle is a playlist generator web app using React/Next.js and Apple Music API that creates custom playlists based on user-selected filters.",
+    "tags": ["personal_project", "frontend", "playlist"]
+  },
+  {
+    "id": "18",
+    "type": "personal_project",
+    "text": "UI/UX case studies include Beef/Bear web and mobile design, The HurdCo data visualization with blockchain backend, and AllTrails routing flow redesign.",
+    "tags": ["personal_project", "design", "ui/ux", "Beef/Bear"]
+  },
+  {
+    "id": "19",
+    "type": "skills",
+    "text": "Navya is skilled in Java, Python, C++, JavaScript, TypeScript, React, Node.js, Express.js, Next.js, Spring, Flask, and Tailwind CSS.",
+    "tags": ["skills", "technical"]
+  },
+  {
+    "id": "20",
+    "type": "skills",
+    "text": "She is also experienced with SQL, Git, Agile/SCRUM, Figma, Miro, and Twilio API.",
+    "tags": ["skills", "tools"]
+  },
+  {
+    "id": "21",
+    "type": "hobby",
+    "text": "Navya enjoys hiking, rock climbing, and basketball.",
+    "tags": ["hobby", "sports"]
+  },
+  {
+    "id": "22",
+    "type": "hobby",
+    "text": "She recently completed the Lake Perris Sprint Triathlon in Spring 2025 and is pursuing tri-sport as a hobby.",
+    "tags": ["hobby", "sports"]
+  },
+  {
+    "id": "23",
+    "type": "personal_interest",
+    "text": "Navya loves movies and is a heavy Letterboxd user.",
+    "tags": ["personal_interest", "movies"]
+  },
+  {
+    "id": "24",
+    "type": "personal_interest",
+    "text": "Some of her favorite movies include Wolf of Wall Street, Ratatouille, Grand Budapest Hotel, Fight Club, Tangled, Ted, 10 Things I Hate About You, Molly's Game, Whiplash, Creed, The Imitation Game, Good Will Hunting, and The Devil Wears Prada.",
+    "tags": ["personal_interest", "movies"]
+  },
+  {
+    "id": "25",
+    "type": "personal_interest",
+    "text": "Navya enjoys music of many genres including Bollywood, RnB, hip-hop, pop, and alternative rock.",
+    "tags": ["personal_interest", "music"]
+  },
+  {
+    "id": "26",
+    "type": "personal_interest",
+    "text": "She has a habit of listening to one song on repeat while working to focus.",
+    "tags": ["personal_interest", "quirk"]
+  },
+  {
+    "id": "27",
+    "type": "interest",
+    "text": "Navya has a technical interest in AI and a creative interest in product design.",
+    "tags": ["interest", "technical_interest", "design", "future_goals"]
+  },
+  {
+    "id": "28",
+    "type": "interest",
+    "text": "Her interest in product design was inspired by the Grace Hopper Celebration in 2023, which led her to explore UI/UX and side creative projects.",
+    "tags": ["interest", "design", "personal_story"]
+  },
+  {
+    "id": "29",
+    "type": "personal_story",
+    "text": "Navya values building, ideating, and iterating, and enjoys the entire software development lifecycle.",
+    "tags": ["personal_story", "career"]
+  },
+  {
+    "id": "30",
+    "type": "personal_story",
+    "text": "She wants to combine her creative design interests with her software engineering skills.",
+    "tags": ["personal_story", "career"]
+  }
+]

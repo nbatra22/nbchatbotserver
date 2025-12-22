@@ -1,0 +1,22 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.8.2",
+    "openai": "^5.23.2",
+    "readline-sync": "^1.4.10",
+    "uuid": "^13.0.0"
+  }
+}
