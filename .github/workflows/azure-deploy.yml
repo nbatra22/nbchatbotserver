@@ -1,6 +1,5 @@
 name: Deploy to Azure
 
-# Trigger workflow on push to main branch OR manually
 on:
   push:
     branches:
@@ -25,19 +24,14 @@ jobs:
         working-directory: toDeploy
         run: npm install
 
-      # Step 4: Build project
-      - name: Build
-        working-directory: toDeploy
-        run: npm run build
-
-      # Step 5: Set environment variables from GitHub Secrets
+      # Step 4: Set environment variables from GitHub Secrets
       - name: Set environment variables
         run: |
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
           echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
           echo "OTHER_SECRET=${{ secrets.OTHER_SECRET }}" >> $GITHUB_ENV
 
-      # Step 6: Deploy to Azure App Service
+      # Step 5: Deploy to Azure App Service
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v3
         with:
