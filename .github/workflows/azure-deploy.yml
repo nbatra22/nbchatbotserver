@@ -1,32 +1,31 @@
-name: Deploy to Azure
-
-on:
-  push:
-    branches:
-      - main  # change to your deployment branch
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Node.js (or Python, etc.)
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
       - name: Install dependencies
-        working-directory: toDeploy   # <---- look inside toDeploy
+        working-directory: toDeploy
         run: npm install
 
       - name: Build
         working-directory: toDeploy
         run: npm run build
 
-      - name: Deploy to Azure WebApp
+      - name: Set environment variables
+        run: |
+          echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
+          echo "OTHER_SECRET=${{ secrets.OTHER_SECRET }}" >> $GITHUB_ENV
+
+      - name: Deploy to Azure
         uses: azure/webapps-deploy@v3
         with:
           app-name: '<YOUR_AZURE_APP_NAME>'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: toDeploy    # <---- point to your deployment folder
+          package: toDeploy
