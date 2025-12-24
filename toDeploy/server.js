@@ -7,38 +7,46 @@ import { v4 as uuidv4 } from "uuid";
 import Redis from "ioredis";
 
 dotenv.config();
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Initialize OpenAI client
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+// ---------- OpenAI ----------
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
-// Initialize Redis client
-// REDIS_URL can be something like: redis://:password@host:port
-const redis = new Redis(process.env.REDIS_URL);
+// ---------- Redis (SINGLE INSTANCE) ----------
+const redis = new Redis(process.env.REDIS_URL, {
+  tls: {},              // required for Azure
+  maxRetriesPerRequest: 3,
+});
 
-// TTL for session history in seconds (e.g., 30 minutes)
-const SESSION_TTL = 1800;
+redis.on("connect", () => {
+  console.log("✅ Connected to Azure Redis (single instance)");
+});
 
-// --- Ping endpoint ---
-// Frontend hits this on page load to warm up and receive a sessionId
+redis.on("error", (err) => {
+  console.error("❌ Redis error:", err);
+});
+
+// ---------- Config ----------
+const SESSION_TTL = 1800; // 30 minutes
+
+// ---------- Ping ----------
 app.get("/ping", async (req, res) => {
   try {
     let { sessionId } = req.query;
+    if (!sessionId) sessionId = uuidv4();
 
-    // Generate new UUID if not provided
-    if (!sessionId) {
-      sessionId = uuidv4();
-    }
+    const key = `session:${sessionId}`;
 
-    // Ensure a session entry exists in Redis with empty history
-    const exists = await redis.exists(`session:${sessionId}`);
+    const exists = await redis.exists(key);
     if (!exists) {
-      await redis.set(`session:${sessionId}`, JSON.stringify([]), "EX", SESSION_TTL);
+      await redis.set(key, JSON.stringify([]), "EX", SESSION_TTL);
     } else {
-      // Refresh TTL
-      await redis.expire(`session:${sessionId}`, SESSION_TTL);
+      await redis.expire(key, SESSION_TTL);
     }
 
     res.json({ sessionId, message: "pong" });
@@ -48,46 +56,38 @@ app.get("/ping", async (req, res) => {
   }
 });
 
-// --- Chat endpoint ---
-// Accepts { sessionId, query }
+// ---------- Chat ----------
 app.post("/chat", async (req, res) => {
   try {
     const { query, sessionId } = req.body;
     if (!query || !sessionId) {
-      return res.status(400).json({ error: "Missing 'query' or 'sessionId' in request body" });
+      return res.status(400).json({ error: "Missing query or sessionId" });
     }
 
-    // Retrieve conversation history from Redis
-    let historyRaw = await redis.get(`session:${sessionId}`);
-    let history = historyRaw ? JSON.parse(historyRaw) : [];
+    const key = `session:${sessionId}`;
 
-    // Retrieve top-k context from portfolio data
+    const historyRaw = await redis.get(key);
+    const history = historyRaw ? JSON.parse(historyRaw) : [];
+
     const { contextText } = await retrieveRelevant(query, client, 3);
 
-    const initialPrompt = `
-      You are Navya's portfolio assistant.
-      Rules:
-      - Answer questions about Navya, her work, or her background.
-      - Keep responses concise (2-3 sentences max).
-      - Provide high-level summaries, not exhaustive details.
-      - If the user asks about projects, highlight only the most important ones.
-      - Always refer to Navya in third person.
-      - Tone: friendly, approachable, slightly playful, and professional.
-    `;
-
-    // Build messages for OpenAI
     const messages = [
-      { role: "system", content: initialPrompt },
-      ...history.map((m) => ({ role: m.role, content: m.content })), // previous conversation
+      {
+        role: "system",
+        content: `
+You are Navya's portfolio assistant.
+Rules:
+- Answer questions about Navya, her work, or her background.
+- Keep responses concise (2–3 sentences max).
+- Provide high-level summaries only.
+- Always refer to Navya in the third person.
+- Tone: friendly, approachable, professional.
+        `,
+      },
+      ...history,
       {
         role: "user",
-        content: `
-          Context:
-          ${contextText}
-
-          Question:
-          ${query}
-        `,
+        content: `Context:\n${contextText}\n\nQuestion:\n${query}`,
       },
     ];
 
@@ -98,11 +98,10 @@ app.post("/chat", async (req, res) => {
 
     const reply = response.choices[0].message.content;
 
-    // Update session history in Redis
     history.push({ role: "user", content: query });
     history.push({ role: "assistant", content: reply });
 
-    await redis.set(`session:${sessionId}`, JSON.stringify(history), "EX", SESSION_TTL);
+    await redis.set(key, JSON.stringify(history), "EX", SESSION_TTL);
 
     res.json({ text: reply });
   } catch (err) {
@@ -111,7 +110,7 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-// Start server
+// ---------- Start ----------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
