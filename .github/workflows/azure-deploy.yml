@@ -27,9 +27,9 @@ jobs:
       # Step 4: Set environment variables from GitHub Secrets
       - name: Set environment variables
         run: |
-          echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
           echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
-          echo "OTHER_SECRET=${{ secrets.OTHER_SECRET }}" >> $GITHUB_ENV
+          echo "REDIS_URL=${{ secrets.REDIS_URL }}" >> $GITHUB_ENV
+          echo "PORT=${{ secrets.PORT }}" >> $GITHUB_ENV
 
       # Step 5: Deploy to Azure App Service
       - name: Deploy to Azure
