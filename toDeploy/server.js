@@ -18,6 +18,7 @@ const client = new OpenAI({
 });
 
 // ---------- Redis (SINGLE INSTANCE) ----------
+console.log("REDIS_URL:", process.env.REDIS_URL || "MISSING");
 const redis = new Redis(process.env.REDIS_URL, {
   tls: {},              // required for Azure
   maxRetriesPerRequest: 3,
