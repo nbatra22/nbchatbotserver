@@ -1,28 +1,43 @@
+name: Deploy to Azure
+
+# Trigger workflow on push to main branch OR manually
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout repo
       - uses: actions/checkout@v3
 
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         working-directory: toDeploy
         run: npm install
 
+      # Step 4: Build project
       - name: Build
         working-directory: toDeploy
         run: npm run build
 
+      # Step 5: Set environment variables from GitHub Secrets
       - name: Set environment variables
         run: |
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
           echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
           echo "OTHER_SECRET=${{ secrets.OTHER_SECRET }}" >> $GITHUB_ENV
 
+      # Step 6: Deploy to Azure App Service
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v3
         with:
