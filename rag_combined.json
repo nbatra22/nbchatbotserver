@@ -1,0 +1,533 @@
+[
+  {
+    "id": "1",
+    "type": "bio",
+    "text": "Navya is a software engineer.",
+    "tags": [
+      "bio",
+      "software engineer"
+    ]
+  },
+  {
+    "id": "2",
+    "type": "education",
+    "text": "Navya has a Bachelor of Science in Computer Science from the University of California, Riverside, graduating in June 2025.",
+    "tags": [
+      "education",
+      "Computer Science",
+      "UCR"
+    ]
+  },
+  {
+    "id": "3",
+    "type": "education",
+    "text": "Navya was a Student Ambassador for Bourns' College of Engineering at UCR.",
+    "tags": [
+      "education",
+      "ambassador",
+      "academic excellence"
+    ]
+  },
+  {
+    "id": "4",
+    "type": "experience",
+    "text": "Navya interned as a Software Engineering Intern at Kohl's Technology in Summer 2024.",
+    "tags": [
+      "work",
+      "internship",
+      "Kohl's"
+    ]
+  },
+  {
+    "id": "5",
+    "type": "experience",
+    "text": "At Kohl's, she developed a data automation tool using Java Spring and TypeScript REST APIs to streamline purchase orders.",
+    "tags": [
+      "work",
+      "software engineering",
+      "data automation",
+      "REST APIs",
+      "Spring Boot"
+    ]
+  },
+  {
+    "id": "6",
+    "type": "experience",
+    "text": "At Kohl's, Navya did user research to find pain points her customers were facing with the data automation tool.",
+    "tags": [
+      "work",
+      "frontend"
+    ]
+  },
+  {
+    "id": "6.5",
+    "type": "experience",
+    "text": "To respond to the painpoints, she used Apache Kafka and React to visualize data, log progress, and provide insights to users.",
+    "tags": [
+      "work",
+      "frontend",
+      "React",
+      "Apache Kafka"
+    ]
+  },
+  {
+    "id": "7",
+    "type": "experience",
+    "text": "Navya interned at The H.Wood Group in Summer 2023",
+    "tags": [
+      "work",
+      "internship"
+    ]
+  },
+  {
+    "id": "7.5",
+    "type": "experience",
+    "text": "She developed her networking skills by building a TCP/IP wireless routing systems for iPads and printers.",
+    "tags": [
+      "work",
+      "software engineering",
+      "fullstack"
+    ]
+  },
+  {
+    "id": "8",
+    "type": "experience",
+    "text": "At the H.Wood group she created an event check-in tool using Twilio API for personalized QR codes and SMS notifications.",
+    "tags": [
+      "work",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "9",
+    "type": "experience",
+    "text": "Navya built a job management portal using JavaScript and SQL to handle venue-specific task assignments.",
+    "tags": [
+      "work",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "10",
+    "type": "experience",
+    "text": "Navya worked as a Software Engineering Research Associate at UCR's Electrical and Computer Engineering Department from March 2023 to June 2023.",
+    "tags": [
+      "work",
+      "research"
+    ]
+  },
+  {
+    "id": "11",
+    "type": "experience",
+    "text": "She automated the download of 30,000+ NASA satellite images daily using JavaScript, optimizing the process by 90%.",
+    "tags": [
+      "work",
+      "research",
+      "APIs",
+      "NASA API"
+    ]
+  },
+  {
+    "id": "12",
+    "type": "experience",
+    "text": "Navya built Python pipelines to migrate datasets into Google Cloud Platform storage for scalable analysis.",
+    "tags": [
+      "work",
+      "research",
+      "Python",
+      "Google Cloud Platform"
+    ]
+  },
+  {
+    "id": "13",
+    "type": "project",
+    "text": "EcoScan is a React/Next.js web app that identifies plant names and native status from uploaded images with GPS coordinates.",
+    "tags": [
+      "project",
+      "tech",
+      "frontend",
+      "React/Next.js",
+      "EcoScan",
+      "GPS identification"
+    ]
+  },
+  {
+    "id": "14",
+    "type": "project",
+    "text": "EcoScan leverages a Flask backend to handle image uploads and processing.",
+    "tags": [
+      "project",
+      "tech",
+      "backend",
+      "Flask",
+      "EcoScan",
+      "HTTPS Requests"
+    ]
+  },
+  {
+    "id": "15",
+    "type": "project",
+    "text": "Congressional Voting Records Analysis is a predictive analysis of US House votes using Python, with machine learning models achieving up to 98% accuracy.",
+    "tags": [
+      "project",
+      "data analysis",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "16",
+    "type": "project",
+    "text": "Hotplate Simulation is a multithreaded C++ heat diffusion simulator, paired with a Python heatmap generator for visualization.",
+    "tags": [
+      "project",
+      "simulation",
+      "technical",
+      "Hotplate Simulation",
+      "C++",
+      "Python",
+      "Visualization"
+    ]
+  },
+  {
+    "id": "17",
+    "type": "personal_project",
+    "text": "Guffle is a playlist generator web app using React/Next.js and Apple Music API that creates custom playlists based on user-selected filters.",
+    "tags": [
+      "personal_project",
+      "frontend",
+      "playlist"
+    ]
+  },
+  {
+    "id": "18",
+    "type": "personal_project",
+    "text": "UI/UX case studies include Beef/Bear web and mobile design, The HurdCo data visualization with blockchain backend, and AllTrails routing flow redesign.",
+    "tags": [
+      "personal_project",
+      "design",
+      "ui/ux",
+      "Beef/Bear"
+    ]
+  },
+  {
+    "id": "19",
+    "type": "skills",
+    "text": "Navya is skilled in Java, Python, C++, JavaScript, TypeScript, React, Node.js, Express.js, Next.js, Spring, Flask, and Tailwind CSS.",
+    "tags": [
+      "skills",
+      "technical"
+    ]
+  },
+  {
+    "id": "20",
+    "type": "skills",
+    "text": "She is also experienced with SQL, Git, Agile/SCRUM, Figma, Miro, and Twilio API.",
+    "tags": [
+      "skills",
+      "tools"
+    ]
+  },
+  {
+    "id": "21",
+    "type": "hobby",
+    "text": "Navya enjoys hiking, rock climbing, and basketball.",
+    "tags": [
+      "hobby",
+      "sports"
+    ]
+  },
+  {
+    "id": "22",
+    "type": "hobby",
+    "text": "She recently completed the Lake Perris Sprint Triathlon in Spring 2025 and is pursuing tri-sport as a hobby.",
+    "tags": [
+      "hobby",
+      "sports"
+    ]
+  },
+  {
+    "id": "23",
+    "type": "personal_interest",
+    "text": "Navya loves movies and is a heavy Letterboxd user.",
+    "tags": [
+      "personal_interest",
+      "movies"
+    ]
+  },
+  {
+    "id": "24",
+    "type": "personal_interest",
+    "text": "Some of her favorite movies include Wolf of Wall Street, Ratatouille, Grand Budapest Hotel, Fight Club, Tangled, Ted, 10 Things I Hate About You, Molly's Game, Whiplash, Creed, The Imitation Game, Good Will Hunting, and The Devil Wears Prada.",
+    "tags": [
+      "personal_interest",
+      "movies"
+    ]
+  },
+  {
+    "id": "25",
+    "type": "personal_interest",
+    "text": "Navya enjoys music of many genres including Bollywood, RnB, hip-hop, pop, and alternative rock.",
+    "tags": [
+      "personal_interest",
+      "music"
+    ]
+  },
+  {
+    "id": "26",
+    "type": "personal_interest",
+    "text": "She has a habit of listening to one song on repeat while working to focus.",
+    "tags": [
+      "personal_interest",
+      "quirk"
+    ]
+  },
+  {
+    "id": "27",
+    "type": "interest",
+    "text": "Navya has a technical interest in AI and a creative interest in product design.",
+    "tags": [
+      "interest",
+      "technical_interest",
+      "design",
+      "future_goals"
+    ]
+  },
+  {
+    "id": "28",
+    "type": "interest",
+    "text": "Her interest in product design was inspired by the Grace Hopper Celebration in 2023, which led her to explore UI/UX and side creative projects.",
+    "tags": [
+      "interest",
+      "design",
+      "personal_story"
+    ]
+  },
+  {
+    "id": "29",
+    "type": "personal_story",
+    "text": "Navya values building, ideating, and iterating, and enjoys the entire software development lifecycle.",
+    "tags": [
+      "personal_story",
+      "career"
+    ]
+  },
+  {
+    "id": "30",
+    "type": "personal_story",
+    "text": "She wants to combine her creative design interests with her software engineering skills.",
+    "tags": [
+      "personal_story",
+      "career"
+    ]
+  },
+  {
+    "id": "auto_47794751-de31-49d8-bf87-0463f593b238",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\nNAVYA BATRA\nNAVYA BATRA\nNAVYA BATRA\n\nCreative technologist crafting at the intersection of computation and design.\n\n01\nCHAT WITH AI\n\nTalk to my AI. Ask anything about my work, process, or just say hi.\n\n→\nENTER\n02\nWORK\n\nSelected projects in tech, design, and creative computation.\n\n→\nENTER\n03\nVAULT\n\nSketches, experiments, poetry, and unreleased fragments.\n\n→\nENTER\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\nDESIGN • C",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/"
+  },
+  {
+    "id": "auto_e18e1dd1-6b01-424e-9b62-395f2cca9529",
+    "type": "portfolio_auto",
+    "text": "ODE • CREATE • EXPLORE✦\nDESIGN • CODE • CREATE • EXPLORE✦\n\n© 2024 NAVYA BATRA — ALL RIGHTS RESERVED\n\nLINKEDIN\nGITHUB\nEMAIL",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/"
+  },
+  {
+    "id": "auto_45ceaf73-6488-441f-8f0c-aa962d900735",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\nWORK\nWORK\nWORK\n\nSelected projects spanning AI, creative coding, and immersive experiences.\n\n// FEATURED\nAI / ML\nVOICEIQ\n\nAn industry level AI agent that handles complex IT support through voice conversation.\n\nCOMPUTER VISION X FASHION TECH\nSECOND SKIN\n\nA projection-mapping system that uses computer vision to turn body movement into responsive digital art.\n\nAFFECTIVE COMPUTING X HAPTICS\nCONNEQ\n\nA wearable system that analyzes biometric data to output a named emotion and frequency of vibration.\n\n// MORE WORK\nDATA VIZ\nSYNTRILLO\n\nA re-design of a physician facing data dashboar",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work"
+  },
+  {
+    "id": "auto_9b7d0307-c1c0-4842-bd89-4eef10ea0664",
+    "type": "portfolio_auto",
+    "text": "d for a health-tech startup.\n\nUI/UX CASE STUDY\nBEEF/BEAR\n\nFull Brand and web app design for FX present's show 'The Bear'.\n\nEDGE COMPUTING\nECOSCAN\n\nA computer vision system to analyze the native/invasive status of a plant.",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work"
+  },
+  {
+    "id": "auto_9260dadb-4e31-4840-a4ac-c48002bb2f9b",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\nVAULT\nVAULT\nVAULT\n\nFragments, experiments, and unreleased work. A curated chaos of creative exploration.\n\n01\nTREE CHAIR\nGENERATIVE 3D RENDER\n2024\n+\n02\nAN OLD WOMAN I DIDN'T KNOW\nWRITING\n2022\n+\n03\nSTORYBOARDING\nSKETCH\n2025\n+\n04\nLOVE IN SILENCE\nWRITING\n2025\n+\n05\nMOTHER NATURE\nPOETRY\n2021\n+\n06\nTHE MAN AT THE TRAIN STATION\nWRITING\n2023\n+\n6 ARTIFACTS\nCLICK TO EXPAND",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/vault"
+  },
+  {
+    "id": "auto_789454db-5ec4-4161-a782-ad9db41d7c4a",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\nCHAT WITH AI\nCHAT WITH AI\nCHAT WITH AI\n\n// REAL-TIME AI CONVERSATION\n\nNAVYA.AI\n\nHey! I'm Navya's AI assistant. Ask me about her work, creative process, or just say hi.\n\nSEND →",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/chat"
+  },
+  {
+    "id": "auto_14c1ec3a-989b-4b08-9bba-ee2038c1b034",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\nBACK TO HOME\nABOUT ME\nABOUT ME\nABOUT ME\nDesigner & Creative Technologist\n\nI'm a creative technologist working at the intersection of art and code. My practice explores how technology can be functional, poetic, and impactful.\n\nAs an engineer, I have experience building and scaling production-level systems. Within industry I've helped in transitioning AI prototypes into robust production level platforms. I've worked across optimization, user research, system design, and full stack engineering to make scalable and impactful products.\n\nAs an artist, I've practiced generative a",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/about"
+  },
+  {
+    "id": "auto_d93c7e94-a1e6-4cce-839d-30aee60f1ecc",
+    "type": "portfolio_auto",
+    "text": "rt, interactive installations, and prioritized immersive user experiences across eveery tech project. Explore my works through my portfolio and case studies.\n\nPORTFOLIO PDF\n\nView an abridged PDF version of highlighted case studies.\n\nRESUME\n\nDownload my resume for a detailed overview of my experience and skills.\n\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\nDESIGN • CODE • CREATE • EXPLORE ✦\n\n© 202",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/about"
+  },
+  {
+    "id": "auto_1cbcf13a-2c48-4ae5-82c2-ac04090c94d5",
+    "type": "portfolio_auto",
+    "text": "5 NAVYA BATRA — ALL RIGHTS RESERVED\n\nLINKEDIN\nGITHUB\nEMAIL",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/about"
+  },
+  {
+    "id": "auto_62baee5c-cb22-482e-87fb-62ce0dea0ffc",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\n← BACK TO WORK\nAI / ML\nVOICEIQ\nVOICEIQ\nVOICEIQ\n// WHAT WAS BUILT\n\nVoiceIQ is a production-grade AI voice assistant designed to handle large-scale IT support workflows. It utilizes an empathetic voice interface to classify user intent, manage support tickets, and resolve issues in real-time. The system was developed as an additional tool for RezolveAI, an AI startup focused on providing Agentic IT Support for our clients.\n\nTECH STACK:\nPython\nFastAPI\nReact\nWebRTC\nOpenAI API\nRedis\nRealTime API\n// BACKGROUND\n\nI was brought onto the team to support the transition of VoiceIQ fro",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/voiceiq"
+  },
+  {
+    "id": "auto_18625b7b-83ff-4777-ba7d-e52dd1e2103d",
+    "type": "portfolio_auto",
+    "text": "m a single-flow prototype to a production-ready platform. The primary challenge was moving beyond a 'happy path' demo to a system that could withstand the unpredictability of real-world callers, high volume, and varied client needs and ticketing platforms.\n\nI worked alongside a team of 3 to turn VoiceIQ from a proof-of-concept to a scalable industry tool.\n\n// PROCESS\n\nPhase 1: Error Handling: To prevent abrupt call terminations when ticket creation failed, I implemented a transfer functionality and graceful recovery logic to ensure a seamless user experience even during technical friction.\n\nPh",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/voiceiq"
+  },
+  {
+    "id": "auto_a9f4888e-76a3-4d3f-878d-89f6fd36f19b",
+    "type": "portfolio_auto",
+    "text": "ase 2: Multi-Tenant Architecture: The platform initially supported only one client with hardcoded API configurations. To enable multi-tenancy, I integrated a PostgreSQL database to store API URLs and schema structures dynamically. By replacing hardcoded logic with database fetches, I made the system entirely dynamic, allowing ticket creation across multiple different tenants and API endpoints.\n\nPhase 3: Multi-Template: Handling different ticketing platforms meant managing varying required fields and inconsistent payload schemas. During this schema creation step, our AI was hallucinating becaus",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/voiceiq"
+  },
+  {
+    "id": "auto_cbcb8dff-3eea-4abe-b5b4-97cbf24bfa28",
+    "type": "portfolio_auto",
+    "text": "e it was overwhelmed by massive, irrelevant API data. I solved this by adding an intermediate layer that simplified API responses to only the relevant JSON fields with self-added requirement tags. I then moved schema creation to a separate OpenAI API call—decoupling it from the Realtime API—to minimize the data load and drastically improve accuracy.\n\nPhase 4: Modular Codebase: I restructured the codebase into use-case-specific directories, moving away from a monolithic main.py to a modular, production-standard architecture.\n\n// FUTURE STEPS\n\nThe next phase is the development of a client config",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/voiceiq"
+  },
+  {
+    "id": "auto_11a2d74a-0a4c-40aa-a667-610e4d54d497",
+    "type": "portfolio_auto",
+    "text": "uration dashboard. This will allow clients to select specific use cases and prompting styles for their voice agent. The system will then dynamically concatenate these selections into a single initial system prompt for the Realtime API. This strategy limits prompt size in real-time, further reducing latency and preventing hallucinations during live interactions.",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/voiceiq"
+  },
+  {
+    "id": "auto_4466ee87-ed21-4b4c-8ece-1c18c4182864",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\n← BACK TO WORK\nCOMPUTER VISION X FASHIONTECH\nSECOND SKIN\nSECOND SKIN\nSECOND SKIN\n// WHAT WAS BUILT\n\nSecond Skin is a projection-mapping system that utilizes computer vision to turn real-time body tracking into responsive visuals. It uses live camera feed to extract the user's skeleton and then projects dynamic animations that respond to their movements.\n\nTECH STACK:\nPython\nComputer Vision\nOpenCV\nMediaPipe\nTouchDesigner\n// BACKGROUND\n\nThe inspiration for this project came from a moment of friction at a fashion tech event. This event marketed itself as the intersection of fa",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_5473eb15-c4f0-43ce-9555-915e2b700330",
+    "type": "portfolio_auto",
+    "text": "shion and technology and integrated augmented reality throughout the show. By the halfway mark, the entire audience had abandoned their VR headsets and post show feedback was largely negative. The technology was said to not integrate well with the show, and headsets were uncomfortable for long periods of time.\n\nI decided I wanted to try integrating technology, animation, and graphics using my computer science background and my interest in fashion and design.\n\nPROCESS\nPHASE 01\n—\nPLANNING\n\nThe inspiration for this project came from a moment of friction at a fashion tech event. This event markete",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_1204b405-8753-402a-803a-02af5e8fabed",
+    "type": "portfolio_auto",
+    "text": "d itself as the intersection of fashion and technology and integrated augmented reality throughout the show. By the halfway mark, the entire audience had abandoned their VR headsets and post show feedback was largely negative. The technology was said to not integrate well with the show, and headsets were uncomfortable for long periods of time.\n\nI decided I wanted to try integrating technology, animation, and graphics using my computer science background and my interest in fashion and design. My initial plan was to project dynamic visuals directly onto a performer's body using depth perception.",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_5eb92a5e-1483-4a39-b006-d82f5ec2b57a",
+    "type": "portfolio_auto",
+    "text": "\n\nPHASE 02\n—\nFIRST BUILD\n\nI used MediaPipe and OpenCV in Python to extract a bare-bone live-feed skeleton of the user. I tried using DensePose first to extract a 3D render, but my hardware didn't support 3D mapping software. This first iteration gave me a working skeleton tracker but needed artistic refinement.\n\nPHASE 03\n—\nANIMATE + LOGIC\n\nTo gain more artistic control, I integrated TouchDesigner. This allowed me to experiment with \"cyber-glitch core\" aesthetics that respond fluidly to the MediaPipe coordinates. It also gave me more freedom to explore counterfunctional design as a concept.\n\nI ",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_ef3b1470-75d3-412a-947c-6db693ab1c57",
+    "type": "portfolio_auto",
+    "text": "could deliberately use unconventional graphics and styles in order to enhance the feeling of technology and give a glitch, futuristic vibe.\n\nPHASE 04\n—\nPROJECTION\n\nAfter encountering depth-perception roadblocks when trying to project onto a moving body, I pivoted to a high-contrast, projection system backdrop. This gave a more \"technical minimalism\" feel to the project and allowed the animations to read cleanly against the performer.\n\nPHASE 05\n—\nONWARD\n\nKnowing this roadblock, I feel my journey with Second Skin has actually just started. I am currently working toward my long-term goal of proje",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_513892c2-9d06-49c3-a4b5-8c8558921cd9",
+    "type": "portfolio_auto",
+    "text": "cting directly onto the body itself. By enabling CUDA on the Jetson Nano and combining DensePose with TouchDesigner, I aim to achieve the depth perception necessary for projecting animations on top of the moving body.",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/projection-mapping"
+  },
+  {
+    "id": "auto_43bbbfa1-bcb5-4219-b439-4b2726e3f3c5",
+    "type": "portfolio_auto",
+    "text": "HOME\nWORK\nVAULT\nCHAT\n← BACK TO WORK\nAFFECTIVE COMPUTING X HAPTICS\nCONNEQ\nCONNEQ\nCONNEQ\n\n— COMING SOON —",
+    "tags": [
+      "portfolio",
+      "auto_generated"
+    ],
+    "source": "https://www.navyabatra.com/work/conneq"
+  }
+]

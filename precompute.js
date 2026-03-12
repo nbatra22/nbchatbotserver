@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const data = JSON.parse(fs.readFileSync("./rag.json", "utf-8"));
+const data = JSON.parse(fs.readFileSync("./rag_combined.json", "utf-8"));
 
 async function precomputeEmbeddings() {
   const embeddedChunks = [];
