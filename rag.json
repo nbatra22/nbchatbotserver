@@ -102,18 +102,6 @@
     "tags": ["project", "data analysis", "machine learning"]
   },
   {
-    "id": "16",
-    "type": "project",
-    "text": "Hotplate Simulation is a multithreaded C++ heat diffusion simulator, paired with a Python heatmap generator for visualization.",
-    "tags": ["project", "simulation", "technical", "Hotplate Simulation", "C++", "Python", "Visualization"]
-  },
-  {
-    "id": "17",
-    "type": "personal_project",
-    "text": "Guffle is a playlist generator web app using React/Next.js and Apple Music API that creates custom playlists based on user-selected filters.",
-    "tags": ["personal_project", "frontend", "playlist"]
-  },
-  {
     "id": "18",
     "type": "personal_project",
     "text": "UI/UX case studies include Beef/Bear web and mobile design, The HurdCo data visualization with blockchain backend, and AllTrails routing flow redesign.",
@@ -152,7 +140,7 @@
   {
     "id": "24",
     "type": "personal_interest",
-    "text": "Some of her favorite movies include Wolf of Wall Street, Ratatouille, Grand Budapest Hotel, Fight Club, Tangled, Ted, 10 Things I Hate About You, Molly's Game, Whiplash, Creed, The Imitation Game, Good Will Hunting, and The Devil Wears Prada.",
+    "text": "Some of her favorite movies include Wolf of Wall Street, Ratatouille, Grand Budapest Hotel, Fight Club, Tangled, 10 Things I Hate About You, Molly's Game, Whiplash, Creed, The Imitation Game, Good Will Hunting, and The Devil Wears Prada.",
     "tags": ["personal_interest", "movies"]
   },
   {
